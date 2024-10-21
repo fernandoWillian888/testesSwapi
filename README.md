@@ -1,0 +1,1 @@
+Criei o arquivo swapi.spec.js seguindo o passo a passo inicial, em seguida comentei os teste iniciais e fiz as requisições adicionais para fazer os 10 testes.
