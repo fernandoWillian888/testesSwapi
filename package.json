@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "swapi.spec.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "build": "CI=false && react-scripts build"
   },
   "keywords": [],
   "author": "",
