@@ -1,6 +1,5 @@
 name: Testes
 on:
-  push
   pull_request
 
 jobs:
