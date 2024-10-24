@@ -4,7 +4,7 @@ on:
 
 jobs:
   continuos-integration:
-    runs-on: darwin
+    runs-on: linux-latest
     steps:
       - uses: actions/checkout@v4
       - name: Using Node.js
