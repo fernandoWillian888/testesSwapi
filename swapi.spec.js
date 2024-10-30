@@ -48,10 +48,10 @@ test("teste6", async () => {
     const resposta = await request("https://swapi.dev/api").get("/films/1/")
     expect(resposta.body.release_date).toBe("1977-05-25")
 })
-// test("teste7", async () => {
-//     const resposta = await request("https://swapi.dev/api").get("/starships/5/")
-//     expect(resposta.body.model).toBe("Sentinel-class landing craft")
-// })
+test("teste7", async () => {
+    const resposta = await request("https://swapi.dev/api").get("/starships/5/")
+    expect(resposta.body.model).toBe("Sentinel-class landing craft")
+})
 // test("teste8", async () => {
 //     const resposta = await request("https://swapi.dev/api").get("/starships/5/")
 //     expect(resposta.body.manufacturer).toBe("Sienar Fleet Systems, Cyngus Spaceworks")
