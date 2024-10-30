@@ -60,7 +60,7 @@ test("teste9", async () => {
     const resposta = await request("https://swapi.dev/api").get("/starships/5/")
     expect(resposta.body.passengers).toBe("75")
 })
-// test("teste10", async () => {
-//     const resposta = await request("https://swapi.dev/api").get("/vehicles/30/")
-//     expect(resposta.body.name).toBe("Imperial Speeder Bike")
-// })
+test("teste10", async () => {
+    const resposta = await request("https://swapi.dev/api").get("/vehicles/30/")
+    expect(resposta.body.name).toBe("Imperial Speeder Bike")
+})
