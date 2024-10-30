@@ -44,10 +44,10 @@ test("teste5", async () => {
     const resposta = await request("https://swapi.dev/api").get("/films/1/")
     expect(resposta.body.director).toBe("George Lucas")
 })
-// test("teste6", async () => {
-//     const resposta = await request("https://swapi.dev/api").get("/films/1/")
-//     expect(resposta.body.release_date).toBe("1977-05-25")
-// })
+test("teste6", async () => {
+    const resposta = await request("https://swapi.dev/api").get("/films/1/")
+    expect(resposta.body.release_date).toBe("1977-05-25")
+})
 // test("teste7", async () => {
 //     const resposta = await request("https://swapi.dev/api").get("/starships/5/")
 //     expect(resposta.body.model).toBe("Sentinel-class landing craft")
