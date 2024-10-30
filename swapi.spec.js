@@ -32,10 +32,10 @@ test("teste2", async () => {
     const resposta = await request("https://swapi.dev/api").get("/people/4/")
     expect(resposta.body.name).toBe("Darth Vader")
 })
-// test("teste3", async () => {
-//     const resposta = await request("https://swapi.dev/api").get("/films/1/")
-//     expect(resposta.body.title).toBe("A New Hope")
-// })
+test("teste3", async () => {
+    const resposta = await request("https://swapi.dev/api").get("/films/1/")
+    expect(resposta.body.title).toBe("A New Hope")
+})
 // test("teste4", async () => {
 //     const resposta = await request("https://swapi.dev/api").get("/films/1/")
 //     expect(resposta.body.episode_id).toBe(4)
