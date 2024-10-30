@@ -56,10 +56,10 @@ test("teste8", async () => {
     const resposta = await request("https://swapi.dev/api").get("/starships/5/")
     expect(resposta.body.manufacturer).toBe("Sienar Fleet Systems, Cyngus Spaceworks")
 })
-// test("teste9", async () => {
-//     const resposta = await request("https://swapi.dev/api").get("/starships/5/")
-//     expect(resposta.body.passengers).toBe("75")
-// })
+test("teste9", async () => {
+    const resposta = await request("https://swapi.dev/api").get("/starships/5/")
+    expect(resposta.body.passengers).toBe("75")
+})
 // test("teste10", async () => {
 //     const resposta = await request("https://swapi.dev/api").get("/vehicles/30/")
 //     expect(resposta.body.name).toBe("Imperial Speeder Bike")
