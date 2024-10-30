@@ -28,10 +28,10 @@ test("teste1", async () => {
     const resposta = await request("https://swapi.dev/api").get("/planets/1/")
     expect(resposta.body.population).toBe("200000")
 })
-// test("teste2", async () => {
-//     const resposta = await request("https://swapi.dev/api").get("/people/4/")
-//     expect(resposta.body.name).toBe("Darth Vader")
-// })
+test("teste2", async () => {
+    const resposta = await request("https://swapi.dev/api").get("/people/4/")
+    expect(resposta.body.name).toBe("Darth Vader")
+})
 // test("teste3", async () => {
 //     const resposta = await request("https://swapi.dev/api").get("/films/1/")
 //     expect(resposta.body.title).toBe("A New Hope")
